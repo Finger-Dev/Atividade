@@ -1,48 +1,35 @@
-# Calculadora Simples
+# Calculadora Simples: lê dois números e um operador aritmético e realiza a operação correspondente.
+(+, -, *, /) e realize a operação correspondente.
 
-Este é um programa simples em Python que solicita ao usuário dois números e um operador (adição, subtração, multiplicação ou divisão) e realiza a operação correspondente. O programa lida com divisões por zero e operadores inválidos, solicitando ao usuário que insira os valores corretos.
+def calcular():
+    while True: #loop contínuo já que não sei quando serão inseridas entradas válidas.
+        try:
+            numero1 = float(input("Digite o primeiro número: "))
+            numero2 = float(input("Digite o segundo número"))
+            operador = input("Digite o operador (+, -, *, /): ")
 
-## Requisitos
+            match operador:
+                case '+':
+                    resultado = numero1 + numero2
+                case '-':
+                    resultado = numero1 - numero2
+                case '*':
+                    resultado = numero1 * numero2
+                case '/':
+                    if numero2 != 0:
+                        resultado = numero1 / numero2
+                    else:
+                        print ("Divisão por zero não é aceita")
+                        continue # Volta ao início do loop
+                case _: 
+                    print ("Escolha um operador válido.")
+                    continue # Volta ao início do loop
 
-- Python 3.x
+            # Em não havendo erros, exibe o resultado:
+            print(f"O resultado de {numero1} {operador} {numero2} é: {resultado}")   
+            break # Para sair do loop!
 
-## Como Usar
+        except ValueError: # exceção ao Try
+            print("Insira números válidos.")
 
-1. **Clone ou faça o download do repositório:**
-   ```sh
-   git clone https://github.com/seuusuario/calculadora-simples.git
-   cd Calculadora
-
-2. **Execute o programa:**
-    Sh
-    python calculadora.py
-
-3. **Siga as instruções:** 
-
-    Digite o primeiro número.
-    Digite o segundo número.
-    Digite o operador desejado (+, -, *, /).
-
-4. **Exemplo de uso:**
-
-    Digite o primeiro número: 10
-    Digite o segundo número: 5
-    Digite o operador (+, -, *, /): +
-    O resultado de 10.0 + 5.0 é: 15.0
-
-## Funcionalidades
-
-Operações Básicas: Adição, subtração, multiplicação e divisão, através da escolha de caso ('match case').
-
-Tratamento de Erros: Valida a entrada do operador e evita divisão por zero, utilizando 'try' e 'except ValueError', além de um match 'case _:' e seu 'continue'.
-
-Loop de Repetição: Permite que o usuário insira novos valores até que uma operação válida seja realizada, utilizando 'while' e 'break'
-
-## Contribuindo
-Se você deseja contribuir com este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-Este projeto é licenciado sob a Licença MIT.
-
-## Contato
-Para dúvidas ou sugestões, entre em contato pelo e-mail fingerdevfinger@gmail.com.
+calcular()
