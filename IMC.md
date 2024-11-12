@@ -28,16 +28,16 @@ Seu IMC é: 22.86
 
 O programa consiste em uma função simples que:
 
-1. usa a função input() para solicitar ao usuário que digite seu peso em quilogramas e altura em metros. 
+1. usa a função `input()` para solicitar ao usuário que digite seu peso em quilogramas e altura em metros. 
    As entradas são convertidas para float para permitir cálculos decimais.
 
-2. usa a Fórmula para cálculo do IMC: peso / (altura ** 2), na qual a entrada 'peso' é dividida pelo quadrado da entrada 'altura',
-   sendo '**' o operador de exponenciação em Python.
+2. usa a Fórmula para cálculo do  `IMC: peso / (altura ** 2)`, na qual a entrada 'peso' é dividida pelo quadrado da entrada 'altura',
+   sendo `**` o operador de exponenciação em Python.
 
-3. Saída: O resultado do cálculo é exibido usando print(), formatado para duas casas decimais usando :.2f.
+3. Saída: O resultado do cálculo é exibido usando `print()`, formatado para duas casas decimais usando `:.2f`.
 
 ## Contribuições
-Se você quiser contribuir com este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request. Toda ajuda é bem-vinda!
+Se você quiser contribuir com este projeto, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*. Toda ajuda é bem-vinda!
 
 ## Licença
 Este projeto é licenciado sob a Licença MIT.
