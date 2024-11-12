@@ -17,24 +17,24 @@ Um número primo é um número natural maior que 1 que só pode ser dividido por
 1. **Clone ou faça o download do repositório**:
    ```sh
    git clone https://github.com/Finger-Dev/Atividade.git
-   cd NumerosPrimos
+   cd Atividade
    ```
 2. **Execute o programa:**
     ```sh
-    NumerosPrimos.py
+    python NumerosPrimos.py
     ```
 3. **Siga as instruções do terminal:**
     * Digite um número maior ou igual a 2.
     * O programa exibirá todos os números primos entre 1 e o número fornecido pelo usuário.
 
 ## Exemplo de uso:
-
+```sh
 Digite um número inteiro: 20
 Números primos entre  1 e 20:  [2, 3, 5, 7, 11, 13, 17, 19]
-
+```
 ## Explicação do Algoritmo
 
-Raiz Quadrada: Usamos  \ int(numero ** 0.5) + 1 \  para iterar apenas até a raiz quadrada de cada número, o que torna a verificação de primalidade mais eficiente, eliminando a necessidade de verificar divisores maiores que ela.
+Raiz Quadrada: Usamos  ` int(numero ** 0.5) + 1 `  para iterar apenas até a raiz quadrada de cada número, o que torna a verificação de primalidade mais eficiente, eliminando a necessidade de verificar divisores maiores que ela.
 
 Loop Principal: Itera sobre cada número de 2 até 𝑁.
 
