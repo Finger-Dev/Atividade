@@ -10,12 +10,13 @@ Este é um programa simples em Python que solicita ao usuário dois números e u
 
 1. **Clone ou faça o download do repositório:**
    ```sh
-   git clone https://github.com/seuusuario/calculadora-simples.git
-   cd Calculadora
+   git clone [https://github.com/Finger-Dev/Atividade.git]
+   cd Atividade
+   ```
 
 2. **Execute o programa:**
-    Sh
-    python calculadora.py
+    
+    `python calculadora.py`
 
 3. **Siga as instruções:** 
 
