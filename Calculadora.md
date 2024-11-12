@@ -5,12 +5,13 @@ Este é um programa simples em Python que solicita ao usuário dois números e u
 ## Requisitos
 
 - Python 3.x
+- Atualizar para acessar funcionalidades da versão 3.10
 
 ## Como Usar
 
 1. **Clone ou faça o download do repositório:**
    ```sh
-   git clone [https://github.com/Finger-Dev/Atividade.git]
+   git clone https://github.com/Finger-Dev/Atividade.git
    cd Atividade
    ```
 
@@ -20,27 +21,27 @@ Este é um programa simples em Python que solicita ao usuário dois números e u
 
 3. **Siga as instruções:** 
 
-    Digite o primeiro número.
-    Digite o segundo número.
-    Digite o operador desejado (+, -, *, /).
+    Siga as instruções para realizar as entradas correspondentes
 
-4. **Exemplo de uso:**
-
+5. **Exemplo de uso:**
+   ```sh
     Digite o primeiro número: 10
     Digite o segundo número: 5
     Digite o operador (+, -, *, /): +
     O resultado de 10.0 + 5.0 é: 15.0
 
+
 ## Funcionalidades
 
-Operações Básicas: Adição, subtração, multiplicação e divisão, através da escolha de caso ('match case').
+- Operações Básicas: Adição, subtração, multiplicação e divisão, através da escolha de caso (`match case`).
 
-Tratamento de Erros: Valida a entrada do operador e evita divisão por zero, utilizando 'try' e 'except ValueError', além de um match 'case _:' e seu 'continue'.
+- Tratamento de Erros: Valida a entrada do operador e evita divisão por zero, utilizando `try` e `except ValueError`, além do `match case _:`
+  e o `continue`. Importante alertar que a introdução do "Structural Pattern Matching", também conhecido como "match-case", só ocorreu a partir do Python 3.10. Portanto, é importante atualizar o software para acessar esta funcionalidade.
 
-Loop de Repetição: Permite que o usuário insira novos valores até que uma operação válida seja realizada, utilizando 'while' e 'break'
+- `Loop` Repetição: através dos comandos `while` e `break`, permite que o usuário insira novos valores até que uma operação válida seja realizada. 
 
 ## Contribuindo
-Se você deseja contribuir com este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+Se você deseja contribuir com este projeto, sinta-se à vontade para abrir uma *issue* ou enviar um *pull request*.
 
 ## Licença
 Este projeto é licenciado sob a Licença MIT.
