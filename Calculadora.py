@@ -1,13 +1,16 @@
 # Calculadora Simples: lê dois números e um operador aritmético e realiza a operação correspondente.
 (+, -, *, /) e realize a operação correspondente.
 
-def calcular():
-    while True: #loop contínuo já que não sei quando serão inseridas entradas válidas.
-        try:
-            numero1 = float(input("Digite o primeiro número: "))
+# Criação da função calcular()
+def Calcular():
+    
+    while True: #Criação de umloop contínuo já que não sei quando serão inseridas entradas válidas.
+        try: # Abertura do Gerenciamento de erros com try-except
+            #inputs para usuário inserir entradas a serem usadas posteriormente (números já convertidos em ponto flutuante).
+            numero1 = float(input("Digite o primeiro número: ")) 
             numero2 = float(input("Digite o segundo número"))
             operador = input("Digite o operador (+, -, *, /): ")
-
+            # Utilização de match-case (escolha caso), funcionalidade presente no Python a partir da versão 3.10.
             match operador:
                 case '+':
                     resultado = numero1 + numero2
@@ -16,7 +19,7 @@ def calcular():
                 case '*':
                     resultado = numero1 * numero2
                 case '/':
-                    if numero2 != 0:
+                    if numero2 != 0: 
                         resultado = numero1 / numero2
                     else:
                         print ("Divisão por zero não é aceita")
@@ -32,4 +35,5 @@ def calcular():
         except ValueError: # exceção ao Try
             print("Insira números válidos.")
 
-calcular()
+# Chamando a função criada:
+Calcular()
