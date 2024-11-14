@@ -47,4 +47,4 @@ percentual_unicos = (clientes_unicos / total_clientes) * 100
 print(f"Clientes em ambos os conjuntos: {clientes_em_ambos}")
 print(f"Clientes apenas em clientes_A: {clientes_apenas_A}")
 print(f"Clientes em apenas um dos conjuntos: {clientes_apenas_um}")
-print(f"Porcentagem de clientes únicos: {percentual_unicos:.2f} %")
+print(f"Porcentagem de clientes únicos: {percentual_unicos:.2f}")
